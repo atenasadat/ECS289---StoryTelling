@@ -2,7 +2,7 @@
 
 Kossar Pourahmadi, Atena Saghi <br/>
 
-In this work, we take advantage of language models to generate conversational responses. We fine-tune pre-trained GPT-2 (124M) model on Harry Potter Dialogue dataset to incorporate characters’ attributes, relations, context, and dialogue history, such that we can generate creative and Harry-Potter-like dialogues for Hogwarts Legacy video game. We compare the results of this model with pre-trained GPT-2 (775M) and ChatGPT in terms of fluency, relevance to scene,relevance to attributes, and relevance to relations. Our implementation code is inspired by [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple). You can access our final report [here](report/ECS_289_ACM_SIGPLAN_Conf.pdf)
+In this work, we take advantage of language models to generate conversational responses. We fine-tune pre-trained GPT-2 (124M) model on Harry Potter Dialogue dataset to incorporate characters’ attributes, relations, context, and dialogue history, such that we can generate creative and Harry-Potter-like dialogues for Hogwarts Legacy video game. We compare the results of this model with pre-trained GPT-2 (775M) and ChatGPT in terms of fluency, relevance to scene,relevance to attributes, and relevance to relations. Our implementation code is inspired by [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple). You can access our final report [here](report/ECS_289_ACM_SIGPLAN_Conf.pdf).
 
 ![teaser](images/Teaser.jpg)
 
