@@ -16,6 +16,7 @@ This repository contains a script written in Tensorflow to fine-tune available p
 	1. [Fine-tuning](#ft)
 	2. [Generating Responses](#inference)
 3. [Results](#results)
+4. [Contributions](#contributions)
 
 
 ## Requirements <a name="Requirements"></a>
@@ -102,6 +103,19 @@ The following is a case study:
 ![case_study](images/1-HPD_case_study.jpg)
 
 For the complete list of case studies, you can refer to this [google document](https://docs.google.com/document/d/1nWe-xf7NY-RIbDkbbnYdhSC8n9F0cMzeIz8fDRwGcug/edit?usp=sharing).
+
+
+## Contributions <a name="contributions"></a>
+
+Kossar and Atena contributed equally to developing the idea. The detailed list of contributions is as follows:
+
+* **Implementing GPT-2 fine-tuning script and obtaining checkpoint:** Kossar, Atena
+* **Obtaining case studies:** Atena
+* **Developing survey:** Kossar
+* **Complementing GitHub README.md:** Kossar, Atena
+* **Final project write-up:** Kossar
+
+
 
 
 
