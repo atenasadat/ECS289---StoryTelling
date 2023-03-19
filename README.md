@@ -39,17 +39,17 @@ python main.py
 You can change the hyperparameters in ```main.py```. To change fine-tuning hyperparams, change ```gpt2.finetune()``` in ```main.py```:
 
 ```python
-	gpt2.finetune(sess,
-              dataset=file_name,
-              model_name='124M',
-              steps=1000,
-              restore_from='latest',
-              run_name='run1',
-              checkpoint_dir='checkpoint',
-              print_every=10,
-              sample_every=200,
-              save_every=300
-			  )
+gpt2.finetune(sess,
+          dataset=file_name,
+          model_name='124M',
+          steps=1000,
+          restore_from='latest',
+          run_name='run1',
+          checkpoint_dir='checkpoint',
+          print_every=10,
+          sample_every=200,
+          save_every=300
+)
 ```
 
 ### Generating Responses <a name="inference"></a>
@@ -57,33 +57,33 @@ You can change the hyperparameters in ```main.py```. To change fine-tuning hyper
 To change test-time specifications, change ```gpt2.generate()``` in ```main.py```:
 
 ```python
-	gpt2.generate(sess,
-              length=50,
-              temperature=0.7,
-              prefix="YOUR PROMPT",
-              nsamples=5,
-              batch_size=5
-              )
+gpt2.generate(sess,
+          length=50,
+          temperature=0.7,
+          prefix="YOUR PROMPT",
+          nsamples=5,
+          batch_size=5
+)
 ```
 
 The fine-tuned checkpoint is also available. You can download the checkpoint from [here](https://drive.google.com/drive/folders/1c_JEb1W9XaUsaBxDvTvQFC40oRW3SP4E?usp=sharing) and put it in ```checkpoint/run1/``` directory. Then to load the checkpoint, use the following code:
 
 ```python
-	import gpt2
+import gpt2
 
-	sess = gpt2.start_tf_sess()
-	gpt2.load_gpt2(sess,
-				run_name="run1",
-				checkpoint_dir="checkpoint"
-				)
+sess = gpt2.start_tf_sess()
+gpt2.load_gpt2(sess,
+            run_name="run1",
+            checkpoint_dir="checkpoint"
+)
 
-	gpt2.generate(sess,
-              length=50,
-              temperature=0.7,
-              prefix="YOUR PROMPT",
-              nsamples=5,
-              batch_size=5
-              )
+gpt2.generate(sess,
+          length=50,
+          temperature=0.7,
+          prefix="YOUR PROMPT",
+          nsamples=5,
+          batch_size=5
+)
 ```
 
 ## Results <a name="results"></a>
